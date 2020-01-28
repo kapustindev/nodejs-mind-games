@@ -4,6 +4,9 @@
   "description": "",
   "main": "src/index.js",
   "type": "module",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/AntonLettuce/backend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/AntonLettuce/backend-project-lvl1#readme"
+  "homepage": "https://github.com/AntonLettuce/backend-project-lvl1#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }

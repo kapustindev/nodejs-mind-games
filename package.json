@@ -22,5 +22,8 @@
   "homepage": "https://github.com/AntonLettuce/backend-project-lvl1#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0"
   }
 }

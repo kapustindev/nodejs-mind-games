@@ -27,10 +27,11 @@ export const evenGame = () => {
     if (question % 2 === 0) {
       correctAnswer = 'yes';
       wrongAnswer = 'no';
-    } else if (question % 2 !== 0) {
+    } else {
       correctAnswer = 'no';
       wrongAnswer = 'yes';
     }
+
     if (userAnswer === correctAnswer) {
       counter += 1;
       console.log('Correct!');

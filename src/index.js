@@ -10,9 +10,11 @@ export default (game) => {
   let counter = 0;
 
   while (counter !== 3) {
+    // Получаем вопрос
     const getQuestion = game[1];
     const question = getQuestion();
-    const getAnswer = game[2]
+    // Получаем правильный ответ
+    const getAnswer = game[2];
     const correctAnswer = getAnswer(question);
 
     console.log(`Question: ${question}`);

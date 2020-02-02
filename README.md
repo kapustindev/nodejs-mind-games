@@ -3,3 +3,5 @@
 [![Make lint](https://github.com/AntonLettuce/backend-project-lvl1/workflows/Lint/badge.svg)](https://github.com//AntonLettuce/backend-project-lvl1/actions)
 ## Installation and game preview
 [![asciicast](https://asciinema.org/a/iDipB3C8VzG9ChJ6pbWBcLkPI.svg)](https://asciinema.org/a/iDipB3C8VzG9ChJ6pbWBcLkPI)
+### Calculator Game
+[![asciicast](https://asciinema.org/a/1npB9v4UwqgI7adOzPixUIBCT.svg)](https://asciinema.org/a/1npB9v4UwqgI7adOzPixUIBCT)

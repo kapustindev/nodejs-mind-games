@@ -7,3 +7,5 @@
 [![asciicast](https://asciinema.org/a/1npB9v4UwqgI7adOzPixUIBCT.svg)](https://asciinema.org/a/1npB9v4UwqgI7adOzPixUIBCT)
 ### NOD Game
 [![asciicast](https://asciinema.org/a/LGmPMOOtBVzKcK4vqxyb0ScAr.svg)](https://asciinema.org/a/LGmPMOOtBVzKcK4vqxyb0ScAr)
+### Progression Game
+[![asciicast](https://asciinema.org/a/YxdgzA4mowSGZKwT6J0RyQh5p.svg)](https://asciinema.org/a/YxdgzA4mowSGZKwT6J0RyQh5p)

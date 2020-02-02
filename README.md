@@ -5,3 +5,5 @@
 [![asciicast](https://asciinema.org/a/iDipB3C8VzG9ChJ6pbWBcLkPI.svg)](https://asciinema.org/a/iDipB3C8VzG9ChJ6pbWBcLkPI)
 ### Calculator Game
 [![asciicast](https://asciinema.org/a/1npB9v4UwqgI7adOzPixUIBCT.svg)](https://asciinema.org/a/1npB9v4UwqgI7adOzPixUIBCT)
+### NOD Game
+[![asciicast](https://asciinema.org/a/LGmPMOOtBVzKcK4vqxyb0ScAr.svg)](https://asciinema.org/a/LGmPMOOtBVzKcK4vqxyb0ScAr)

@@ -8,7 +8,7 @@ export default () => {
     const num2 = Number(numArray[1]);
     let stepCount = 0;
     let maxDiv = 0;
-    num1 > num2 ? stepCount = num2 : stepCount = num1;
+    stepCount = num1 > num2 ? num2 : num1;
 
     for (let i = 1; i <= stepCount; i += 1) {
       if (num1 % i === 0 && num2 % i === 0) {

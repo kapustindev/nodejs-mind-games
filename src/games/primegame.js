@@ -13,5 +13,3 @@ export default () => {
   const result = [rules, randNumber, getCorrectAnswer];
   return result;
 };
-
-  

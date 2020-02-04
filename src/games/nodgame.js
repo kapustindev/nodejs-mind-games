@@ -1,11 +1,9 @@
+import getEngine from '../index.js';
+import getRandomNumber from '../utils/randomnumber.js';
+
 export default () => {
   const rules = 'Find the greatest common divisor of given numbers.';
-  const randNumber = () => Math.ceil(Math.random() * 100);
-  const getRandNumbers = () => `${randNumber()} ${randNumber()}`;
-  const getNod = (str) => {
-    const numArray = str.split(' ');
-    const num1 = Number(numArray[0]);
-    const num2 = Number(numArray[1]);
+  const getNod = (num1, num2) => {
     let stepCount = 0;
     let maxDiv = 0;
     stepCount = num1 > num2 ? num2 : num1;
@@ -15,9 +13,15 @@ export default () => {
         maxDiv = i;
       }
     }
-
-    return maxDiv.toString();
+    return maxDiv;
   };
-  const result = [rules, getRandNumbers, getNod];
-  return result;
+
+  const values = () => {
+    const num1 = getRandomNumber(100);
+    const num2 = getRandomNumber(100);
+    const question = `${num1} ${num2}`;
+    const answer = getNod(num1, num2).toString();
+    return [question, answer];
+  };
+  return getEngine(rules, values);
 };

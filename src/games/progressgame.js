@@ -1,35 +1,25 @@
+import getEngine from '../index.js';
+import getRandomNumber from '../utils/randomnumber.js';
+
 export default () => {
   const rules = 'What number is missing in the progression?';
-  const randNumber = (num) => Math.ceil(Math.random() * num);
-  const getQuestion = () => {
-    const beginOfProgr = randNumber(25);
-    const stepOfProgr = randNumber(3);
-    const hiddenIndex = Math.floor(Math.random() * 10);
+  const values = () => {
+    const beginOfProgr = getRandomNumber(25);
+    const stepOfProgr = getRandomNumber(3);
+    const hiddenIndex = getRandomNumber(10, 'floor');
     const resultArray = [];
+    let answer = 0;
     for (let i = beginOfProgr; i < beginOfProgr + (10 * stepOfProgr); i += stepOfProgr) {
       if (i !== beginOfProgr + (hiddenIndex * stepOfProgr)) {
         resultArray.push(i);
       } else {
         resultArray.push('..');
+        answer = i.toString();
       }
     }
-    return resultArray.join(' ');
-  };
-  const getCorrectAnswer = (str) => {
-    const arr = str.split(' ');
-    const hiddenIndex = arr.indexOf('..');
-    let correctAnswer = 0;
-    let step = 0;
-    if (arr[hiddenIndex - 2] !== undefined) {
-      step = Number(arr[hiddenIndex - 1]) - Number(arr[hiddenIndex - 2]);
-      correctAnswer = Number(arr[hiddenIndex - 1]) + step;
-    } else {
-      step = Number(arr[hiddenIndex + 2]) - Number(arr[hiddenIndex + 1]);
-      correctAnswer = Number(arr[hiddenIndex + 1]) - step;
-    }
-    return correctAnswer.toString();
+    const question = resultArray.join(' ');
+    return [question, answer];
   };
 
-  const result = [rules, getQuestion, getCorrectAnswer];
-  return result;
+  return getEngine(rules, values);
 };

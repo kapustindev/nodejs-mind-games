@@ -1,37 +1,39 @@
+import getEngine from '../index.js';
+import getRandom from '../utils/randomnumber.js';
+
 export default () => {
   const rules = 'What is the result of the expression?';
-  const randNumber = () => Math.ceil(Math.random() * 100);
-  const randOperation = () => {
-    const operations = ['+', '-', '*'];
-
-    const getRandChar = () => {
-      const operationIndex = Math.floor(Math.random() * Math.floor(operations.length));
-      return operations[operationIndex];
-    };
-
-    return `${randNumber()} ${getRandChar()} ${randNumber()}`;
-  };
-  const calcAnswer = (str) => {
-    const resultArr = str.split(' ');
-    const num1 = Number(resultArr[0]);
-    const num2 = Number(resultArr[2]);
-    let answer = '';
-    switch (resultArr[1]) {
+  const operations = ['+', '-', '*'];
+  const getRandChar = () => operations[getRandom(3, 'floor')];
+  const getValues = (num1, num2, oper) => {
+    let result = 0;
+    switch (oper) {
       case '+':
-        answer = num1 + num2;
+        result = num1 + num2;
         break;
       case '-':
-        answer = num1 - num2;
+        result = num1 - num2;
         break;
       case '*':
-        answer = num1 * num2;
+        result = num1 * num2;
         break;
       default:
         break;
     }
-    return answer.toString();
+    return result;
   };
 
-  const result = [rules, randOperation, calcAnswer];
-  return result;
+  const values = () => {
+
+    const randNum1 = getRandom(25);
+    const randNum2 = getRandom(25);
+    const randOper = getRandChar();
+
+    const question = `${randNum1} ${randOper} ${randNum2}`;
+    const answer = getValues(randNum1, randNum2, randOper).toString();
+
+    return [question, answer];
+  };
+
+  return getEngine(rules, values);
 };

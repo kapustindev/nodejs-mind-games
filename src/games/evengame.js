@@ -1,7 +1,13 @@
+import getEngine from '../index.js';
+import getRandomNumber from '../utils/randomnumber.js';
+
 export default () => {
   const rules = 'Answer "yes" if the number is even, otherwise answer "no"';
-  const randNumber = () => Math.ceil(Math.random() * 100);
-  const condition = (num) => (num % 2 === 0 ? 'yes' : 'no');
-  const result = [rules, randNumber, condition];
-  return result;
+  const isEven = (num) => num % 2 === 0;
+  const values = () => {
+    const question = getRandomNumber(100);
+    const answer = isEven(question) ? 'yes' : 'no';
+    return [question, answer];
+  };
+  return getEngine(rules, values);
 };

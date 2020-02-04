@@ -24,7 +24,6 @@ export default () => {
   };
 
   const values = () => {
-
     const randNum1 = getRandom(25);
     const randNum2 = getRandom(25);
     const randOper = getRandChar();

@@ -1,38 +1,34 @@
 import getEngine from '../index.js';
 import getRandom from '../utils/randomnumber.js';
 
-export default () => {
-  const rules = 'What is the result of the expression?';
-  const operations = ['+', '-', '*'];
-  const getRandChar = () => operations[getRandom(3, 'floor')];
-  const getValues = (num1, num2, oper) => {
-    let result = 0;
-    switch (oper) {
-      case '+':
-        result = num1 + num2;
-        break;
-      case '-':
-        result = num1 - num2;
-        break;
-      case '*':
-        result = num1 * num2;
-        break;
-      default:
-        break;
-    }
-    return result;
-  };
+const gameDescription = 'What is the result of the expression?';
 
-  const values = () => {
-    const randNum1 = getRandom(25);
-    const randNum2 = getRandom(25);
-    const randOper = getRandChar();
+const operations = ['+', '-', '*'];
 
-    const question = `${randNum1} ${randOper} ${randNum2}`;
-    const answer = getValues(randNum1, randNum2, randOper).toString();
+const getOperator = () => operations[getRandom(0, 2)];
 
-    return [question, answer];
-  };
-
-  return getEngine(rules, values);
+const calculate = (num1, num2, oper) => {
+  switch (oper) {
+    case '+':
+      return num1 + num2;
+    case '-':
+      return num1 - num2;
+    case '*':
+      return num1 * num2;
+    default:
+      return console.log(`Operator ${oper} doesn't exist`);
+  }
 };
+
+const values = () => {
+  const randNum1 = getRandom(0, 25);
+  const randNum2 = getRandom(0, 25);
+  const randOper = getOperator();
+
+  const question = `${randNum1} ${randOper} ${randNum2}`;
+  const answer = calculate(randNum1, randNum2, randOper).toString();
+
+  return [question, answer];
+};
+
+export default () => getEngine(gameDescription, values);

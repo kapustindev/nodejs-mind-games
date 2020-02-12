@@ -1,15 +1,14 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/55751bae8fa756a787b4/maintainability)](https://codeclimate.com/github/AntonLettuce/backend-project-lvl1/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/55751bae8fa756a787b4/test_coverage)](https://codeclimate.com/github/AntonLettuce/backend-project-lvl1/test_coverage)
 [![Make lint](https://github.com/AntonLettuce/backend-project-lvl1/workflows/Lint/badge.svg)](https://github.com//AntonLettuce/backend-project-lvl1/actions)
 ### Installation
-[![asciicast](https://asciinema.org/a/wRk8da7sMF7IP9wSJBA5UNvcN.svg)](https://asciinema.org/a/wRk8da7sMF7IP9wSJBA5UNvcN)
+[![asciicast](https://asciinema.org/a/JxpGMPe2Bi6CnNUcA97Vxjign.svg)](https://asciinema.org/a/JxpGMPe2Bi6CnNUcA97Vxjign)
 ### Is Number Even Game
-[![asciicast](https://asciinema.org/a/4ZQxCI7f3AyxzOzmXDlB3HruX.svg)](https://asciinema.org/a/4ZQxCI7f3AyxzOzmXDlB3HruX)
+[![asciicast](https://asciinema.org/a/300813.svg)](https://asciinema.org/a/300813)
 ### Calculator Game
-[![asciicast](https://asciinema.org/a/dG0uUwHaiNd1bg51oBidXzh5D.svg)](https://asciinema.org/a/dG0uUwHaiNd1bg51oBidXzh5D)
-### NOD Game
-[![asciicast](https://asciinema.org/a/XqDBB2YQLbAWd5FGpQVe1UMDQ.svg)](https://asciinema.org/a/XqDBB2YQLbAWd5FGpQVe1UMDQ)
+[![asciicast](https://asciinema.org/a/300815.svg)](https://asciinema.org/a/300815)
+### GCD Game
+[![asciicast](https://asciinema.org/a/300816.svg)](https://asciinema.org/a/300816)
 ### Progression Game
-[![asciicast](https://asciinema.org/a/pZDQwZZf9i1lTLneL1D5t99gZ.svg)](https://asciinema.org/a/pZDQwZZf9i1lTLneL1D5t99gZ)
+[![asciicast](https://asciinema.org/a/300819.svg)](https://asciinema.org/a/300819)
 ### Is Number Prime Game
-[![asciicast](https://asciinema.org/a/oCkYJx5lgGlb3MvR18EMjQsbb.svg)](https://asciinema.org/a/oCkYJx5lgGlb3MvR18EMjQsbb)
+[![asciicast](https://asciinema.org/a/300817.svg)](https://asciinema.org/a/300817)

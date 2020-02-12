@@ -6,4 +6,6 @@ jobs:
   eslint:
     runs-on: ubuntu-latest
     steps:
-      - run: make lint
+      - name: Linter
+        uses: ../../Makefile
+        run: make lint

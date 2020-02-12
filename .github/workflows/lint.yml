@@ -1,4 +1,4 @@
-name: Lint
+name: lint
 
 on: [push]
 
@@ -6,7 +6,4 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: npm install
-      env:
-          CI: true
       - run: make lint

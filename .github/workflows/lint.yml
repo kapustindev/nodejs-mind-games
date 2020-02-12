@@ -3,8 +3,10 @@ name: Lint
 on: [push]
 
 jobs:
-  eslint:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Linter
-        run: make lint
+      - run: npm install
+      env:
+          CI: true
+      - run: make lint

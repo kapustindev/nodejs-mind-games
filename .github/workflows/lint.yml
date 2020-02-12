@@ -7,5 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Linter
-        uses: ../../Makefile
         run: make lint

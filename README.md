@@ -1,5 +1,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/55751bae8fa756a787b4/maintainability)](https://codeclimate.com/github/AntonLettuce/backend-project-lvl1/maintainability)
-[![Make lint](https://github.com/AntonLettuce/backend-project-lvl1/workflows/Lint/badge.svg)](https://github.com//AntonLettuce/backend-project-lvl1/actions)
+[![Make lint](https://github.com/AntonLettuce/backend-project-lvl1/workflows/lint/badge.svg)](https://github.com//AntonLettuce/backend-project-lvl1/actions)
 ### Installation
 [![asciicast](https://asciinema.org/a/JxpGMPe2Bi6CnNUcA97Vxjign.svg)](https://asciinema.org/a/JxpGMPe2Bi6CnNUcA97Vxjign)
 ### Is Number Even Game

@@ -1,22 +1,22 @@
-import getEngine from '../index.js';
+import runEngine from '../index.js';
 import getRandomNumber from '../utils/randomnumber.js';
 
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
-  const arrOfDivisors = [];
+  const divisors = [];
   for (let divisor = 2; divisor <= num; divisor += 1) {
     if (num % divisor === 0) {
-      arrOfDivisors.push(divisor);
+      divisors.push(divisor);
     }
   }
-  return arrOfDivisors.length === 1;
+  return divisors.length === 1;
 };
 
-const values = () => {
+const genGameData = () => {
   const question = getRandomNumber(0, 100);
   const answer = isPrime(question) ? 'yes' : 'no';
   return [question.toString(), answer];
 };
 
-export default () => getEngine(gameDescription, values);
+export default () => runEngine(gameDescription, genGameData);

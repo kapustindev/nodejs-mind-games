@@ -1,11 +1,9 @@
-import getEngine from '../index.js';
+import runEngine from '../index.js';
 import getRandomNumber from '../utils/randomnumber.js';
 
 const gameDescription = 'What is the result of the expression?';
 
-const operations = ['+', '-', '*'];
-
-const getOperator = () => operations[getRandomNumber(0, 2)];
+const operators = ['+', '-', '*'];
 
 const calculate = (num1, num2, operator) => {
   switch (operator) {
@@ -20,10 +18,10 @@ const calculate = (num1, num2, operator) => {
   }
 };
 
-const values = () => {
+const genGameData = () => {
   const num1 = getRandomNumber(0, 25);
   const num2 = getRandomNumber(0, 25);
-  const operator = getOperator();
+  const operator = operators[getRandomNumber(0, operators.length - 1)];
 
   const question = `${num1} ${operator} ${num2}`;
   const answer = calculate(num1, num2, operator).toString();
@@ -31,4 +29,4 @@ const values = () => {
   return [question, answer];
 };
 
-export default () => getEngine(gameDescription, values);
+export default () => runEngine(gameDescription, genGameData);

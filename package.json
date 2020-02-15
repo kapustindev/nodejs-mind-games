@@ -7,7 +7,7 @@
   "bin": {
     "brain-calc": "src/bin/brain-calc.js",
     "brain-even": "src/bin/brain-even.js",
-    "brain-nod": "src/bin/brain-nod.js",
+    "brain-nod": "src/bin/brain-gcd.js",
     "brain-progression": "src/bin/brain-progress.js",
     "brain-prime": "src/bin/brain-prime.js"
   },
@@ -20,6 +20,7 @@
   },
   "author": "",
   "license": "ISC",
+  "keywords": ["brain games", "hexlet", "math games"],
   "bugs": {
     "url": "https://github.com/AntonLettuce/backend-project-lvl1/issues"
   },

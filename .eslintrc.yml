@@ -1,6 +1,4 @@
 env:
-  // Согласно документации, эта строка исползуется для поддержки синтаксиса ECMAScript 6 
-  es6: true
   node: true
 extends:
   - airbnb-base

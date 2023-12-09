@@ -1,7 +1,7 @@
 import runEngine from '../index.js';
 import getRandomNumber from '../utils/randomnumber.js';
 
-const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no"';
+const GAME_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no"';
 
 const isEven = (num) => num % 2 === 0;
 
@@ -11,4 +11,4 @@ const genGameData = () => {
   return [String(question), answer];
 };
 
-export default () => runEngine(gameDescription, genGameData);
+export default () => runEngine(GAME_DESCRIPTION, genGameData);

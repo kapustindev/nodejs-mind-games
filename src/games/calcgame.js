@@ -1,7 +1,7 @@
 import runEngine from '../index.js';
 import getRandomNumber from '../utils/randomnumber.js';
 
-const gameDescription = 'What is the result of the expression?';
+const GAME_DESCRIPTION = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
 
@@ -29,4 +29,4 @@ const genGameData = () => {
   return [question, answer];
 };
 
-export default () => runEngine(gameDescription, genGameData);
+export default () => runEngine(GAME_DESCRIPTION, genGameData);

@@ -1,16 +1,14 @@
 import readlineSync from 'readline-sync';
 
-const answersToWin = 3;
+const CORRECT_ANSWERS_TO_WIN = 3;
 
 export default (gameDescription, getGameData) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-  // Выводим условия игры
   console.log(gameDescription);
 
-  for (let level = 0; level < answersToWin; level += 1) {
-    // Получаем значения
+  for (let level = 0; level < CORRECT_ANSWERS_TO_WIN; level += 1) {
     const [question, correctAnswer] = getGameData();
 
     console.log(`Question: ${question}`);

@@ -1,7 +1,7 @@
 import runEngine from '../index.js';
 import getRandomNumber from '../utils/randomnumber.js';
 
-const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const GAME_DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
   const divisors = [];
@@ -19,4 +19,4 @@ const genGameData = () => {
   return [question.toString(), answer];
 };
 
-export default () => runEngine(gameDescription, genGameData);
+export default () => runEngine(GAME_DESCRIPTION, genGameData);
